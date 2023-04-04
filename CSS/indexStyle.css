@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 * {
-    font-family: 'Outfit', 'Roboto', san-serif;
+    font-family: 'Outfit', 'Roboto';
     background-color: #121212;
     box-sizing: border-box;		
 }
