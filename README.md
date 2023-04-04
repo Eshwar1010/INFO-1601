@@ -1,4 +1,8 @@
-# INFO-1601
+# INFO-1601 Project - HotSpott
+
+
+HotSpott is a web application elegantly designed for you to discover the hottest events in Trinidad and Tobago at a glance, its your ultimate event guide.
+
 
 ## Fonts
 
