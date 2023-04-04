@@ -9,11 +9,10 @@
 
 a {
 	text-decoration: none;
-	color: #9C3974;
+    color: #94BCF9;
 }
 
 body {
-	background-color: black;
 	color: white;
 	margin: 0;
 	padding: 0;
@@ -21,16 +20,42 @@ body {
 
 nav {
 	display: flex;
+    justify-content: flex-end;
+    align-items: center;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+}
+
+nav .name {
+    margin-right: auto;
+    color: #A05597;
+    cursor: pointer;
+    font-size: 30px;
 }
 
 nav ul li {
-	display: inline;
+	display: inline-block;
+    display: flex;
+    padding: 0px 20px;
 }
 
 nav ul {
-	list-style-type: none;
+	list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    margin-left: 20px;
+    padding: 2px 20px;
+    background-color: #A05597;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 #main {
