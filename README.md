@@ -8,3 +8,14 @@ Roboto - @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@
 
 ## Colors
 
+000000 - Black
+121212 - Chinese Black
+171717 - Chinese Black 2
+232323 - Raisin Black
+FFFFFF - White
+9C3974 - Maximum Red Purple
+A05597 - Purpureus
+004DB6 - Absolute Zero
+0095FA - Azure
+94BCF9 - Jordy Blue
+A3ACBD - Cadet Blue
