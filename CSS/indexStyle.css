@@ -2,6 +2,49 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 * {
-    font-family: 'Outfit', 'Roboto';
+    font-family: 'Outfit', 'Roboto', san-serif;
     background-color: #121212;
+    box-sizing: border-box;		
+}
+
+a {
+	text-decoration: none;
+	color: #9C3974;
+}
+
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+#main {
+	border: white 2px solid;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 5px;
+	margin: 10px 60px;
+	align-content: center;
+}
+#main_img img{
+	width: 100%;
+	max-height: 300px;
+	object-fit: contain;
+}
+
+#main_text h2 {
+	font-size: 3em;
 }
