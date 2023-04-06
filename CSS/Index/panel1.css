@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root {
+    --redpurp: #9C3974;
+    --purp: #A05597;
+    --zero: #004DB6;
+    --azure: #0095fa;
+    --jblue: #94bcf9;
+    --cblue: #a3acbd;
+    --cBlack1: #121212;
+}
+
+#main {
+	display: grid;
+	grid-template-columns: 4fr 3fr;
+	padding: 5px;
+	margin: 10px 60px;
+	align-content: center;
+    justify-content: center;
+}
+
+#main_img {
+    background: linear-gradient(25deg, rgba(158, 54, 146, 0),
+    rgb(158, 54, 146, 1));
+    border-radius: 20px;
+    padding: 2px;
+    width: 100%;
+    height: max-content;
+}
+    
+#main_img img{
+	width: 100%;
+	height: inherit;
+    margin: 0;
+	object-fit: contain;
+    border-radius: 20px;
+    min-width: 50vw;
+}
+
+#main_text {
+	font-size: 4vw;
+    padding: 0% 20px;
+    display:table-cell;
+    vertical-align:middle;   
+}
+#main_btn {
+    padding: 5px 25px;
+    background-color: var(--jblue);
+    border: var(--jblue) 2px solid;
+    /*color: white;*/
+    font-size: smaller;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#sec_btn{
+    padding: 5px 25px;
+    border: var(--jblue) 2px solid;
+    color: var(--jblue);
+    font-size: smaller;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+}

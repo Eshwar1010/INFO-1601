@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root {
+    --redpurp: #9C3974;
+    --purp: #A05597;
+    --zero: #004DB6;
+    --azure: #0095fa;
+    --jblue: #94bcf9;
+    --cblue: #a3acbd;
+    --cBlack1: #121212;
+}
+
+* {
+    font-family: 'Outfit', 'Roboto', 'san-serif';
+    box-sizing: border-box;		
+    background-color: var(--cBlack1);
+}
+
+::selection {
+    /*color: black;*/
+    background-color: white;
+}
+
+a {
+	text-decoration: none;
+    color: var(--jblue);
+}
+
+body {
+    background-color: var(--cBlack1);
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+    border: var(--jblue) 3px solid;
+    border-radius: 20px;
+	padding: 10px;
+	margin: 60px 60px;
+    display: grid;
+}
