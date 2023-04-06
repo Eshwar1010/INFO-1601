@@ -24,29 +24,35 @@
 
   <body>
 
-    <header>
+    <header class="header">
+
+      <img class="logo" src="IMAGES/HotSpottLogoCalendar.png"> 
+
+      <a class="name" href="index.html">HotSpott</a>
 
       <nav>
-        <img class="logo1" src="IMAGES/HotSpottLogoCalendar.png"> 
-
-        <a class="name" href="index.html">HotSpott</a>
-
         <ul>
-          <li>
-            <a href="HTML/about.html">About</a>
-          </li>
-          <li>
-            <a href="HTML/calendar.html">Calender</a>
-          </li>
-          <li>
-            <a href="HTML/contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="HTML/login.html">Login</a>
-          </li>
+          <li><a href="HTML/about.html">About</a></li>
+          <li><a href="HTML/calendar.html">Calender</a></li>
+          <li><a href="HTML/contact.html">Contact</a></li>
+          <li><a href="HTML/login.html">Login</a></li>
         </ul>
       </nav>
       
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+        <ul class="mobile-menu">
+          <li><a href="HTML/about.html">About</a></li>
+          <li><a href="HTML/calendar.html">Calender</a></li>
+          <li><a href="HTML/contact.html">Contact</a></li>
+          <li><a href="HTML/login.html">Login</a></li>
+        </ul>
+
+      </div>
+
     </header>
 
     <div id="main">
@@ -115,6 +121,8 @@
         <button type="submit" value="submit">Submit</button>
       </div>
     </footer>
+
+    <script src="JAVASCRIPT/Index/mobileNavBar.js"></script>
 
   </body>
 

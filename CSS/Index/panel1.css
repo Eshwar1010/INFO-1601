@@ -19,7 +19,7 @@
     margin-left: 10%;
     margin-right: 10%;
 	align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #main_img {
