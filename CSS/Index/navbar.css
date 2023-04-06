@@ -25,22 +25,21 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 33px;
+    padding: 2vw;
 }
 
 header .logo {
-    width: 50px;
+    width: 4vw;
     cursor: pointer;
     justify-content:left;
-    margin-left: 0px;
-    margin-right: 20px;
+    margin: 1vw
 }
 
 header .name {
     margin-right: auto;
     color: var(--purp);
     cursor: pointer;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 nav ul {
@@ -50,9 +49,9 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-    padding: 0px 20px;
+    padding: 2vw;
     font-weight: medium;
-    font-size: 20px;
+    font-size: 1.7vw;
 }
 
 nav ul li a {
@@ -63,36 +62,36 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
     background-color: var(--jblue);
-    margin-left: 20px;
-    padding: 2px 20px;
+    margin-left: 1vw;
+    padding: 0.2vw 1.5vw;
     border: none;
-    border-radius: 50px;
+    border-radius: 3vw;
     cursor: pointer;
 }
 
 #hamburger-icon .mobile-menu {
     background-color: var(--cBlack1);
     list-style: none;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #hamburger-icon .mobile-menu li{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
 #hamburger-icon {
-    margin: auto 0;
+    margin: 0.5vw;
     display: none;
     cursor: pointer;
 }
 
 #hamburger-icon div {
-    width: 35px;
-    height: 3px;
+    width: 3vw;
+    height: 0.3vw;
     background-color: white;
-    margin: 6px 0;
+    margin: 1vw;
     transition: 0.4s;
 }
 

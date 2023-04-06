@@ -20,7 +20,7 @@
 }
 
 ::selection {
-    /*color: black;*/
+    color: var(--cBlack1);
     background-color: white;
 }
 
