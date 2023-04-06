@@ -1,0 +1,7 @@
+footer ul {
+    text-decoration: none;
+}
+
+footer ul li {
+    display:inline-block;
+}

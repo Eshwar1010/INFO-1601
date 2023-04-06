@@ -1,0 +1,5 @@
+.callToAction img {
+    object-fit: contain;
+    width: auto;
+    height: 30vw;
+}

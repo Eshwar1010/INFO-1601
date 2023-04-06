@@ -1,0 +1,17 @@
+section {
+    border: var(--jblue) 3px solid;
+    border-radius: 20px;
+	padding: 10px;
+	margin: 60px 60px;
+    display: grid;
+}
+
+#sec_btn{
+    padding: 5px 25px;
+    border: var(--jblue) 2px solid;
+    color: var(--jblue);
+    font-size: smaller;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+}
