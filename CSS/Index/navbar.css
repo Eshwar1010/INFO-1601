@@ -19,6 +19,13 @@ nav {
 	padding: 10px;
 }
 
+nav .logo1 {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+    margin: 10px;
+}
+
 nav a.name {
     color: var(--purp);
     margin-right: auto;
@@ -26,12 +33,6 @@ nav a.name {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-}
-
-.name img {
-    width: auto;
-    height: 1.4ch;
-    object-fit: contain;
 }
 
 nav ul li {
