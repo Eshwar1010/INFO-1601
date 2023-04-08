@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
 :root {
-    --redpurp: #9C3974;
-    --purp: #A05597;
-    --zero: #004DB6;
-    --azure: #0095fa;
-    --jblue: #94bcf9;
-    --cblue: #a3acbd;
-    --cBlack1: #121212;
+  --redpurp: #9c3974;
+  --purp: #a05597;
+  --zero: #004db6;
+  --azure: #0095fa;
+  --jblue: #94bcf9;
+  --cblue: #a3acbd;
+  --cBlack1: #121212;
+  --cBlack2: #171717;
+  --rasinBlack: #232323;
 }
 
 #panel1 {
