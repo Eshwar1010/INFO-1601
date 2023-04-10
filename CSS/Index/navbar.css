@@ -137,10 +137,16 @@ nav ul li a:hover {
         display: inline-block;
     }
     header .name {
-        font-size: 6vw;
+        font-size: 5vw;
+        position: relative;
+        top: 5px;
+        left: 10px
     }
     header .logo {
-        width: 6vw;
+        width: 5vw;
+        position: relative;
+        top: 5px;
+        left: 10px
     }
 
 }

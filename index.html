@@ -63,7 +63,7 @@
         <a href="#" id="panel1_btn2">ADD EVENT</a>
       </div>
       <div id="panel1_img">
-        <img src="IMAGES/jumpUP.png">
+        <img src="IMAGES/jumpUP.png" id="P1image">
       </div>
     </div>
 
@@ -78,20 +78,27 @@
       </div>
     </section>
     
-    <section>
-      <h3>MEET THE TEAM</h3>
-      <div>
-        Lead/UI Implementation
-        <p>Events happen throughout the year in Triniad and Tobago, yet many of them go unnoticed. This site will promote local events for the public to interact with.</p>
-      </div>
-      <div>
-        UI Designer/Implementation
-        <p>"I wanted this to be an information hub for Trinidadians. One that looks, feels, and work good."</p>
-      </div>
-      <div>
-        Javascript Dev/Marketing
-        <p>"Events bring people together and provide an opportunity to learn, share experiences, and build relationships. Which has been missed during the heights of the Covid-19 pandemic. With an event page an easy to use platform for people to find and attend events that they are interested in  all year long. Also, events can be promoted and build a sense of community as people come together once again"</p>
-      </div>
+    <section id="section2">
+      <h3><span id="meetTeam">MEET THE TEAM</span></h3>
+        <div>
+          <h4>Lead/UI Implementation</h4>
+          <p>"Events happen throughout the year in Triniad and Tobago, yet many of them go unnoticed. This site will <span
+              id="dots" onclick="show()">read more...</span><span id="more"> promote local events for the public to interact
+              with."</span> <span id="less" onclick="show()">...show less</span></p>
+        </div>
+        <div>
+          <h4>UI Designer/Implementation</h4>
+          <p>"I wanted this to be an information hub for Trinidadians. One that looks, feels, and work good."</p>
+        </div>
+        <div>
+          <h4>Javascript Dev/Marketing</h4>
+          <p>"Events bring people together and provide an opportunity to learn, share experiences, and build <span
+              id="dots2" onclick="showMore()">read more...</span><span id="more2"> relationships. Which has been missed
+              during the heights of the Covid-19 pandemic. With an event page an easy to use platform for people to find and
+              attend events that they are interested in all year long. Also, events can be promoted and build a sense of
+              community as people come together once again"</span> <span id="less2" onclick="showMore()">...show less</span>
+          </p>
+        </div>
     </section>
 
     <section class="callToAction">
@@ -123,6 +130,8 @@
     </footer>
 
     <script src="JAVASCRIPT/Index/mobileNavBar.js"></script>
+    <script src="JAVASCRIPT/Index/meetTeam.js"></script>
+    <script src="JAVASCRIPT/indexScript.js"></script>
 
   </body>
 
