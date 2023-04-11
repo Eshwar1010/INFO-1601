@@ -136,17 +136,17 @@ nav ul li a:hover {
     #hamburger-icon {
         display: inline-block;
     }
+    header {
+        margin: 1vw;
+    }
     header .name {
-        font-size: 5vw;
+        font-size: 4vw;
         position: relative;
-        top: 5px;
-        left: 10px
+        top: 2px;
     }
     header .logo {
         width: 5vw;
         position: relative;
-        top: 5px;
-        left: 10px
     }
 
 }

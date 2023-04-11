@@ -13,8 +13,13 @@
   --rasinBlack: #232323;
 }
 
+.callToAction {
+  border: none;
+}
+
 .callToAction img {
-    object-fit: contain;
-    width: auto;
-    height: 30vw;
+  width: 80vw;
+  height: auto;
+  border-radius: 2.5vw;
+  
 }

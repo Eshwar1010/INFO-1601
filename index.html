@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="CSS/Index/section.css"/>
     <link rel="stylesheet" href="CSS/Index/section1.css"/>
+    <link rel="stylesheet" href="CSS/Index/section2.css"/>
     <link rel="stylesheet" href="CSS/Index/callToAction.css"/>
 
     <link rel="stylesheet" href="CSS/Index/footer.css"/>
@@ -64,6 +65,7 @@
       </div>
       <div id="panel1_img">
         <img src="IMAGES/jumpUP.png" id="P1image">
+        <img src="IMAGES/jumpUpFull.png" id="P1image2">
       </div>
     </div>
 
@@ -81,17 +83,17 @@
     <section id="section2">
       <h3><span id="meetTeam">MEET THE TEAM</span></h3>
         <div>
-          <h4>Lead/UI Implementation</h4>
+          <h4 class="Lead">Lead/UI Implementation</h4>
           <p>"Events happen throughout the year in Triniad and Tobago, yet many of them go unnoticed. This site will <span
               id="dots" onclick="show()">read more...</span><span id="more"> promote local events for the public to interact
               with."</span> <span id="less" onclick="show()">...show less</span></p>
         </div>
         <div>
-          <h4>UI Designer/Implementation</h4>
+          <h4 class="UI">UI Designer/Implementation</h4>
           <p>"I wanted this to be an information hub for Trinidadians. One that looks, feels, and work good."</p>
         </div>
         <div>
-          <h4>Javascript Dev/Marketing</h4>
+          <h4 class="Java">Javascript Dev/Marketing</h4>
           <p>"Events bring people together and provide an opportunity to learn, share experiences, and build <span
               id="dots2" onclick="showMore()">read more...</span><span id="more2"> relationships. Which has been missed
               during the heights of the Covid-19 pandemic. With an event page an easy to use platform for people to find and
@@ -102,12 +104,11 @@
     </section>
 
     <section class="callToAction">
-      <img src="IMAGES/crowd.jpg">
-      <p>Be A Part Of The Next Big Fete</p>
+      <img src="IMAGES/crowd.png">
     </section>
 
     <footer>
-      <h3>HOTSPOTT</h3>
+      <h3 class="footerName">HOTSPOTT</h3>
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -123,9 +124,11 @@
         </li>
       </ul>
       <div>
-        <h3>Join Our Newsletter</h3>
-        <input type="email">
-        <button type="submit" value="submit">Submit</button>
+        <h3 class="newsName">Join Our Newsletter</h3>
+        <form>
+          <input type="email">
+          <button type="submit" value="submit">Submit</button>
+        </form>
       </div>
     </footer>
 
