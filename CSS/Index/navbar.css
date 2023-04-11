@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2vw;
 }
 
 header .logo {
@@ -42,6 +41,7 @@ header .name {
     color: var(--purp);
     cursor: pointer;
     font-size: 3vw;
+    font-weight: 550;
 }
 
 nav ul {
@@ -53,7 +53,7 @@ nav ul li {
 	display: inline-block;
     padding: 2vw;
     font-weight: medium;
-    font-size: 1.7vw;
+    font-size: 1.9vw;
 }
 
 nav ul li a {
@@ -125,6 +125,7 @@ nav ul li a:hover {
     left: 0;
     height: calc(100vh - 50 px);
     width: 100%;
+    font-size: 4vw;
 }
 
 @media only screen and (max-width: 680px) {
@@ -134,6 +135,18 @@ nav ul li a:hover {
 
     #hamburger-icon {
         display: inline-block;
+    }
+    header .name {
+        font-size: 5vw;
+        position: relative;
+        top: 5px;
+        left: 10px
+    }
+    header .logo {
+        width: 5vw;
+        position: relative;
+        top: 5px;
+        left: 10px
     }
 
 }
