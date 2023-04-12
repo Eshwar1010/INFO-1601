@@ -1,7 +1,7 @@
 #section2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 1vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
 }
 
@@ -16,39 +16,35 @@
     background-color: var(--purp);
     border-radius: 60px;
     padding: 2px 30px;
+    margin: 5px;
 }
 
 #section2 div {
     background-color: var(--cblue);
-    padding: 15px;
+    padding: 15px 25px;
     border-radius: 15px;
+    margin: 8px 5px;
+    height: fit-content; 
     min-height: fit-content;
-
 }
 
 #section2 div h4 {
     font-size: 1.8vw;
     background-color: var(--cblue);
     text-align: center;
+
 }
 
-#section2 div .UI {
-    margin-bottom: 2vw;
+.UI, .Lead, .Java {
+    margin: 15px 10px;
+    box-sizing: content-box;
 }
 
-#section2 div .Lead {
-    margin-top: 1vw;
-    margin-bottom: 3.3vw;
-}
-
-#section2 div .Java {
-    margin-top: 1vw;
-    margin-bottom: 3.3vw;
-}
 
 #section2 div p {
     font-size: 1.5vw;
     background-color: var(--cblue);
+    vertical-align: bottom;
 }
 
 #dots, #less , #dots2, #more2 {
@@ -67,7 +63,7 @@
     display: none;
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:800px) {
     #section2 {
         grid-template-columns: 1fr;
     }

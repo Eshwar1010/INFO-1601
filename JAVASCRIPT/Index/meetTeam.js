@@ -6,11 +6,11 @@ function show() {
     if (moreText.style.display === "none") {
         moreText.style.display = "inline";
         readMore.style.display = "none";
-        readLess.style.display = "inline"
+        readLess.style.display = "inline";
     }
     else {
         moreText.style.display = "none";
-        readMore.style.display = "inline"
+        readMore.style.display = "inline";
         readLess.style.display = "none";
     }
 }
@@ -23,11 +23,11 @@ function showMore() {
     if (moreText2.style.display === "none") {
         moreText2.style.display = "inline";
         readMore2.style.display = "none";
-        readLess2.style.display = "inline"
+        readLess2.style.display = "inline";
     }
     else {
         moreText2.style.display = "none";
-        readMore2.style.display = "inline"
+        readMore2.style.display = "inline";
         readLess2.style.display = "none";
     }
 }
