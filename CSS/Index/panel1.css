@@ -37,8 +37,9 @@
 
 img#P1image2 {
     display: none;
-    border: 1vw;
+    background-image: linear-gradient(to bottom left, rgb(100, 2, 100), rgb(161, 1, 161));
     border-radius: 4vw;
+    padding: 1px;
 }
 
 #panel1_text {
@@ -62,13 +63,26 @@ img#P1image2 {
     color: white;
 }
 #panel1_btn, #panel1_btn2 {
-    padding: 1vw;
+    padding: 0.5vw 2vw;
     border: var(--jblue) solid 2px;
     font-size: 1.6vw;
     display: inline;
     margin: 1vw;
     border-radius: 4vw;
     float:left;
+}
+
+#panel1_btn:hover {
+    box-shadow: 0px 0px 6px white;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+#panel1_btn2:hover {
+    box-shadow: 0px 0px 6px white;
+    background-color: var(--jblue);
+    color: white;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 @media only screen and (max-width:680px) {
@@ -89,6 +103,7 @@ img#P1image2 {
     #panel1_btn, #panel1_btn2 {
         font-size: 3.5vw;
         float:none;
+        padding: 1vw 3vw;
     }
 
     #panel1_img img{

@@ -83,6 +83,11 @@ nav ul li a:hover {
     margin-bottom: 1vw;
 }
 
+.mobile-menu li:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--jblue);
+}
+
 #hamburger-icon {
     margin: 0.5vw;
     display: none;
