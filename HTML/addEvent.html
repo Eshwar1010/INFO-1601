@@ -3,7 +3,7 @@
     <head>
         <meta chatset="utf">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add HottSpott</title>
+        <title>Add HotSpott</title>
         <link rel="icon" type="image/x-icon" href="/IMAGES/HotSpott LOGO No slogan.png">
         <link rel="stylesheet" href="/CSS/Index/global.css"/>
         <link rel="stylesheet" href="/CSS/Event/addEvent.css">
@@ -11,36 +11,68 @@
     <body>
         <h1>CREATE HOTSPOTT EVENT</h1>
         <main>
-            <form>
-                <label>Event Name</label>
-                <input type="text">
-                <br>
-                <label>Event Description</label>
-                <textarea rows="4" cols="100">hi</textarea>
-                <br>
-                <label>Venue</label>
-                <input type="text">
-                <br>
-                <label>Event Date & Time</label>
-                <input type="datetime">
-                <br>
-                <label>Cost</label>
-                <input type="number">
-                <br>
-                <label>Event Image</label> 
-                <input type="image">
-                <br>
-                <label>Event Catagory</label>
-                <select>
-                    <option>one</option>
-                </select>
-                <br>
-                <label>Event Organizer</label>  
-                <input type="text">
-                <br>
-                <label>Event Website</label>
-                <input type="url">
-                <br>
+            <form method="post">
+                <div class="formPart" id="eventName">
+                    <label>Event Name</label>
+                    <input type="text" name="eventName" required autocomplete="on">   
+                </div>
+                <div class="formPart" id="eventDesc">
+                    <label>Event Description</label>
+                    <textarea rows="5" cols="100" name="eventDesc" placeholder="What is your event about..."></textarea>
+                </div>
+                <div class="formPart">
+                    <label>General Region</label>
+                    <select>
+                        <option>Arima</option>
+                        <option>Chaguanas</option>
+                        <option>Couva–Tabaquite–Talparo</option>
+                        <option>Diego Martin</option>
+                        <option>Mayaro–Rio Claro</option>
+                        <option>Penal–Debe</option>
+                        <option>Point Fortin</option>
+                        <option>Port of Spain</option>
+                        <option>Princes Town</option>
+                        <option>San Fernando</option>
+                        <option>San Juan-Laventille</option>
+                        <option>Sangre Grande</option>
+                        <option>Siparia</option>
+                        <option>Tobago</option>
+                        <option>Tunapuna-Piarco</option>
+                    </select>
+                </div>
+                <div class="formPart">
+                    <label>Venue</label>
+                    <input type="text"> 
+                </div>
+                <div class="formPart">
+                    <label>Event Date & Time</label>
+                    <input type="date"><input type="time">
+                </div>
+                <div class="formPart">
+                    <label>Cost</label>
+                    <input type="number">
+                </div>
+                <div class="formPart">
+                    <label>Event Image</label> 
+                    <input type="image">
+                </div>
+                <div class="formPart">
+                    <label>Event Catagory</label>
+                    <select>
+                        <option>one</option>
+                    </select>
+                </div>
+                <div class="formPart">
+                    <label>Event Organizer</label>  
+                    <input type="text">
+                </div>
+                <div class="formPart">
+                    <label>Event Website</label>
+                    <input type="url">
+                </div>
+                <div id="submitEvent">
+                    <button type="submit" value="submit" >SUBMIT</button>
+                </div>
             </form>
         </main>
     </body>
