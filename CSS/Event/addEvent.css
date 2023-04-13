@@ -1,3 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+:root {
+  --redpurp: #9c3974;
+  --purp: #a05597;
+  --zero: #004db6;
+  --azure: #0095fa;
+  --jblue: #94bcf9;
+  --cblue: #a3acbd;
+  --cBlack1: #121212;
+  --cBlack2: #171717;
+  --rasinBlack: #232323;
+}
+
+::placeholder {
+    color:#232323;
+}
+
+h1 {
+    text-align: center;
+    margin: 1vw;
+    font-size: 4vw;
+    color: var(--redpurp);
+}
+
 input {
+    background-color: var(--cblue);
+    border: none;
+    height: 35px;
+    border-radius: 15px; 
+    margin-bottom: 3px;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px; 
+    outline: none;
+}
+
+button[value="submit"] {
+    background-color: var(--cblue);
+    height: 35px;
+    border-radius: 20px; 
+    margin-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    font-size: 20px; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+select {
+    min-height: fit-content;
+}
+
+textarea, select {
+    background-color: var(--cblue);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+option {
+    background-color: var(--cBlack2);
+    text-align: center;
     color: white;
 }
+option:hover {
+    background-color: #921c1c;
+}
+
+label {
+    font-size: 25px;
+}
+label::after {
+    content: ":";
+}
+
+form {
+    border: 3px solid var(--redpurp);
+    background-color: var(--cBlack1);
+    margin: 2vw 7vw;
+    padding: 2vw 3vw;
+    border-radius: 30px;
+    box-shadow: 0 0 5px var(--redpurp);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formPart {
+    border: 2px solid var(--cblue);
+    padding: 2vw;
+    margin: 2vw 0.5vw;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#eventName, #eventDesc, #submitEvent {
+    grid-column: 1 / span 2;
+}
+
