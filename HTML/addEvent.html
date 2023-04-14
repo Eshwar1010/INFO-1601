@@ -11,69 +11,98 @@
     <body>
         <h1>CREATE HOTSPOTT EVENT</h1>
         <main>
-            <form method="post">
+            
+            <form method="POST" target="_blank" autocomplete="on" action="https://script.google.com/macros/s/AKfycbwyc35jizGbvlsxH0PSJZTm3yJVy-JP4z62B78gAdF4xEOTEhgWyyT32my90ygmUjKT/exec" id="addEvent">
+                <p>* Indicates a required field</p>
                 <div class="formPart" id="eventName">
-                    <label>Event Name</label>
-                    <input type="text" name="eventName" required autocomplete="on">   
+                    <label for="evntName">*Event Name</label>
+                    <input type="text" name="eventName" id="evntName" required autofocus>   
                 </div>
+                <hr>
                 <div class="formPart" id="eventDesc">
-                    <label>Event Description</label>
-                    <textarea rows="5" cols="100" name="eventDesc" placeholder="What is your event about..."></textarea>
+                    <label for="evntDesc">*Event Description</label>
+                    <textarea rows="5" cols="100" name="eventDesc" id="evntDesc" placeholder="What is your event about..." required></textarea>
                 </div>
-                <div class="formPart">
-                    <label>General Region</label>
-                    <select>
-                        <option>Arima</option>
-                        <option>Chaguanas</option>
-                        <option>Couva–Tabaquite–Talparo</option>
-                        <option>Diego Martin</option>
-                        <option>Mayaro–Rio Claro</option>
-                        <option>Penal–Debe</option>
-                        <option>Point Fortin</option>
-                        <option>Port of Spain</option>
-                        <option>Princes Town</option>
-                        <option>San Fernando</option>
-                        <option>San Juan-Laventille</option>
-                        <option>Sangre Grande</option>
-                        <option>Siparia</option>
-                        <option>Tobago</option>
-                        <option>Tunapuna-Piarco</option>
+                <hr>
+                <div class="formPart" id="eventRegion">
+                    <label for="evntRegion">*General Region</label>
+                    <select id="evntRegion" name="region" required>
+                        <option value="arima">Arima</option>
+                        <option value="chaguanas">Chaguanas</option>
+                        <option value="couva_tabaquite_talparo">Couva–Tabaquite–Talparo</option>
+                        <option value="diego-martin">Diego Martin</option>
+                        <option value="mayaro_rio-claro">Mayaro–Rio Claro</option>
+                        <option value="penal_debe">Penal–Debe</option>
+                        <option value="point-fortin">Point Fortin</option>
+                        <option value="port-of-spain">Port of Spain</option>
+                        <option value="princes-town">Princes Town</option>
+                        <option value="san-fernando">San Fernando</option>
+                        <option value="san-juan_laventille">San Juan-Laventille</option>
+                        <option value="sangre-grande">Sangre Grande</option>
+                        <option value="siparia">Siparia</option>
+                        <option value="tobago">Tobago</option>
+                        <option value="tunapuna_piarco">Tunapuna-Piarco</option>
                     </select>
                 </div>
-                <div class="formPart">
-                    <label>Venue</label>
-                    <input type="text"> 
+                <div class="formPart" id="eventVenue">
+                    <label for="evntVenue">*Venue</label>
+                    <input type="text" name="eventVenue" id="evntVenue" placeholder="Euphoria Lounge..." required> 
                 </div>
-                <div class="formPart">
-                    <label>Event Date & Time</label>
-                    <input type="date"><input type="time">
+                <hr>
+                <div class="formPart" id="dateTime">
+                    <div>
+                        <label for="startDate">*Start Date</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                        <br>
+                        <label for="startTime">*Start Time</label>
+                        <input type="time" id="startTime" name="startTime" required>
+                    </div>
+                    <div>
+                        <label for="endDate">*End Date</label>
+                        <input type="date" id="endDate" name="endDate" required>
+                        <br>
+                        <label for="endTime">*End Time</label>
+                        <input type="time" id="endTime" name="endTime" required>
+                    </div>
                 </div>
-                <div class="formPart">
-                    <label>Cost</label>
-                    <input type="number">
+                <hr>
+                <div class="formPart" id="eventCost">
+                    <label for="evntCost">*Cost</label> 
+                    <p>(TTD) <sub>Set cost to 0 if Free<sub></sub></p>
+                    <input type="number" name="eventCost" id="evntCost" required>
                 </div>
-                <div class="formPart">
-                    <label>Event Image</label> 
-                    <input type="image">
+                <div class="formPart" id="eventImg">
+                    <label for="evntImg">Event Image</label> 
+                    <input type="file" multiple accept="image/*" name="eventImg" id="evntImg">
                 </div>
-                <div class="formPart">
-                    <label>Event Catagory</label>
-                    <select>
-                        <option>one</option>
+                <hr>
+                <div class="formPart" id="eventCtg">
+                    <label for="evntCtg">Event Catagory</label>
+                    <select id="evntCtg" name="catagory">
+                        <option value="parties_fetes">Parties & Fetes</option>
+                        <option value="food">Food</option>
+                        <option value="health_wellness">Health and Wellness</option>
+                        <option value="music_concert">Music & Concerts</option>
+                        <option value="performing_visual_arts">Performing and Visual Arts</option>
+                        <option value="culture_festival">Culture & Festivals</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="nature_outdoors">Nature and Outdoors</option>
                     </select>
                 </div>
-                <div class="formPart">
-                    <label>Event Organizer</label>  
-                    <input type="text">
+                <div class="formPart" id="eventOrg">
+                    <label for="evntOrg">Event Organizer</label>  
+                    <input type="text" name="eventOrg" id="evntOrg">
                 </div>
-                <div class="formPart">
-                    <label>Event Website</label>
-                    <input type="url">
+                <hr>
+                <div class="formPart" id="eventSite">
+                    <label for="evntSite">Event Website</label>
+                    <input type="url" id="evntSite" name="eventSite" placeholder="www.https://...">
                 </div>
                 <div id="submitEvent">
-                    <button type="submit" value="submit" >SUBMIT</button>
+                    <button type="submit" value="submit" id="submitEvnt" >SUBMIT</button>
                 </div>
             </form>
         </main>
+        <script src="/JAVASCRIPT/addEvent.js"></script>
     </body>
 </html>

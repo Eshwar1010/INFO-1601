@@ -36,6 +36,11 @@ input {
     outline: none;
 }
 
+input[type="file"] {
+    height: 60px;
+}
+
+
 button[value="submit"] {
     background-color: var(--cblue);
     height: 35px;
@@ -52,7 +57,7 @@ textarea {
 }
 
 select {
-    min-height: fit-content;
+    height: fit-content;
 }
 
 textarea, select {
@@ -68,12 +73,10 @@ option {
     text-align: center;
     color: white;
 }
-option:hover {
-    background-color: #921c1c;
-}
 
 label {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 label::after {
     content: ":";
@@ -96,10 +99,59 @@ form {
     margin: 2vw 0.5vw;
     border-radius: 30px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+
+
 }
 
-#eventName, #eventDesc, #submitEvent {
+#submitEvnt:hover {
+    box-shadow: 0 0 5px var(--cblue);
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+#eventName, #eventDesc, #submitEvent, hr, #dateTime, #eventSite{
     grid-column: 1 / span 2;
 }
 
+#dateTime {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+
+@media only screen and (max-width:800px) {
+    hr {
+        display: none;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    label{
+        font-size: 5vw;
+    }
+
+    p{
+        font-size: 3vw;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    #eventName, #eventDesc, #submitEvent, hr, #dateTime, #eventSite{
+        grid-column: 1 / span 1;
+    }
+
+    input, button, textarea, select {
+        width: 70vw;
+    }
+
+    #dateTime {
+        grid-template-columns: 1fr;
+    }
+
+
+}
