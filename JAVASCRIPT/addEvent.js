@@ -1,6 +1,6 @@
 const form = document.querySelector("#addEvent")
 const submitButton = document.querySelector("#submitEvnt")
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwyc35jizGbvlsxH0PSJZTm3yJVy-JP4z62B78gAdF4xEOTEhgWyyT32my90ygmUjKT/exec'
+const scriptURL = 'https://api.sheetmonkey.io/form/qmzFbivvsV4CttqsLzGo9t'
 
 form.addEventListener('submit', e => {
     submitButton.disabled = true
@@ -8,7 +8,7 @@ form.addEventListener('submit', e => {
     let requestBody = new FormData(form)
     fetch(scriptURL, { method: 'POST', body: requestBody })
         .then(response => {
-            alert('Success!', response)
+            alert('Event Added!', response)
             submitButton.disabled = false
         })
         .catch(error => {
@@ -18,4 +18,3 @@ form.addEventListener('submit', e => {
         }
         )
 })
-//info sends to google sheet without js but not with it

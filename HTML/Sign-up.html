@@ -9,9 +9,8 @@
 
         <title>HotSpott Sign-up</title>
 
-        <link rel="stylesheet" href="../CSS/Login/login.css"/>
-        
-        <script type="text/javascript" src="Sign-up.js"></script>
+        <link rel="stylesheet" href="/CSS/Login/login.css"/>
+        <link rel="icon" type="image/x-icon" href="/IMAGES/HotSpott LOGO No slogan.png">
 
     </head>
 
@@ -19,31 +18,34 @@
 
         <div class="sign-up-box">
             <h2>Sign-up</h2>
-            <form>
+            <form method="post" action="https://api.sheetmonkey.io/form/edqjkGvVDkvYxvUsdNceTr" target="_blank" id="sign-up-form">
               <div class="user-box">
-                <input type="text" username="" required="">
-                <label>Username</label>
-              </div>
-              <div class="email-box">
-                <input type="email" name="" required="">
-                <label>email</label>
+                <input type="text" name="Username" id="username" required>
+                <label for="username">Username</label>
               </div>
               <div class="user-box">
-                <input type="password" name="password" required="">
-                <label>Password</label>
+                <input type="email" name="Email" required id="email">
+                <label for="email">Email</label>
               </div>
-              <a class="sign-up" href="#">
+              <div class="user-box">
+                <input type="password" name="Password" required id="password">
+                <label for="password">Password</label>
+              </div>
+              <button class="sign-up" type="submit" value="submit" id="submit">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Sign up
-              </a>
+              </button>
             </form>
 
             <a href="login.html">Already have an account? Login here.</a>
  
           </div>
+          
+          <script type="text/javascript" src="/JAVASCRIPT/login.js"></script>
+      
         
     </body>
 

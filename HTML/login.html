@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-TT">
 
     <head>
 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>HotSpott Login</title>
 
         <link rel="stylesheet" href="../CSS/Login/login.css"/>
+        <link rel="icon" type="image/x-icon" href="/IMAGES/HotSpott LOGO No slogan.png">
 
     </head>
 
@@ -17,16 +18,17 @@
 
         <div class="login-box">
             <h2>Login</h2>
-            <form>
+            <form method="post" action="https://api.sheety.co/8e6180d7d1ec4054557598f0b1950a1f/loginSignUp/sheet1">
               <div class="user-box">
-                <input type="text" name="" required="">
-                <label>Username</label>
+                <input type="text" name="Username" 
+                 id="username" required>
+                <label for="username">Username</label>
               </div>
               <div class="user-box">
-                <input type="password" name="" required="">
-                <label>Password</label>
+                <input type="password" name="Password" id="password" required>
+                <label for="password">Password</label>
               </div>
-              <a class="login" href="#">
+              <a class="login" href="#" onclick="searchuser()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,18 +37,54 @@
               </a>
             </form>
 
-            <a href=" https://github.com/Eshwar1010/INFO-1601/blob/main/HTML/login.html">Don't have an account? SignUp</a>
+            <a href="Sign-up.html">Don't have an account? SignUp</a>
            
             
           </div>
         
     </body>
-        
-        <script src="login.js"></script>
-<script>
-    
-    login();
-    
-</script>
-    
+    <script src="/JAVASCRIPT/login.js"></script>
+    <script>
+      let allUsers = [];
+      async function getData() {
+        try {
+          let response = await fetch("https://api.sheety.co/8e6180d7d1ec4054557598f0b1950a1f/loginSignUp/sheet1");
+          let result = await response.json();
+          const users = Object.values(result);
+          console.log(users);
+        } catch (e) {
+          console.log(e);
+        }
+      }
+
+      async function showAllUsers() {
+        allUsers = await getData();
+        return allUsers;
+      }
+      showAllUsers();
+      
+      function searchuser() {
+        let username = document.querySelector('#username').value;
+        let password = document.querySelector("#password").value;
+
+        for (let user of allUsers) {
+          let cUsername = user.username;
+          let cPassword = user.password;
+
+          if ((username == cUsername) && (password == cPassword)) {
+            alert("Login Sucessfull");
+            window.location.href = "/index.html"
+          }
+          else if ((username === cUsername) && (password != cPassword)) {
+            alert("Incorrect password");
+          }
+          else if ((username != cUsername) && (password === cPassword)) {
+            alert("Incorrect username");
+          }
+          else {
+            alert("Incorrect Login Credentials");
+          }
+        }
+      };
+        </script>
 </html>

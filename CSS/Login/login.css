@@ -24,7 +24,7 @@ body {
   background: var(--cBlack1);
 }
 
-.login-box {
+.login-box, .sign-up-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,18 +37,18 @@ body {
   border-radius: 10px;
 }
 
-.login-box h2 {
+.login-box h2, .sign-up-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.login-box .user-box {
+.login-box .user-box, .sign-up-box .user-box{
   position: relative;
 }
 
-.login-box .user-box input {
+.login-box .user-box input, .sign-up-box .user-box input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -59,7 +59,7 @@ body {
   outline: none;
   background: transparent;
 }
-.login-box .user-box label {
+.login-box .user-box label, .sign-up-box .user-box label {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +71,8 @@ body {
 }
 
 .login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box .user-box input:valid ~ label, .sign-up-box .user-box input:focus ~ label,
+.sign-up-box .user-box input:valid ~ label  {
   top: -20px;
   left: 0;
   color: var(--purp);
@@ -93,7 +94,26 @@ body {
   letter-spacing: 4px;
 }
 
-.login-box a.login:hover {
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  color: var(--purp);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 10px;
+  letter-spacing: 4px;
+  background-color: var(--rasinBlack);
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.login-box a.login:hover, .sign-up-box form button:hover {
   background: var(--purp);
   color: #fff;
   border-radius: 5px;
@@ -101,12 +121,12 @@ body {
     0 0 100px var(--purp);
 }
 
-.login-box a.login span {
+.login-box a.login span, .sign-up-box form button span {
   position: absolute;
   display: block;
 }
 
-.login-box a.login span:nth-child(1) {
+.login-box a.login span:nth-child(1), .sign-up-box form button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -125,7 +145,7 @@ body {
   }
 }
 
-.login-box a.login span:nth-child(2) {
+.login-box a.login span:nth-child(2),.sign-up-box form button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -145,7 +165,7 @@ body {
   }
 }
 
-.login-box a.login span:nth-child(3) {
+.login-box a.login span:nth-child(3), .sign-up-box form button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -165,7 +185,7 @@ body {
   }
 }
 
-.login-box a.login span:nth-child(4) {
+.login-box a.login span:nth-child(4), .sign-up-box form button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -185,7 +205,7 @@ body {
   }
 }
 
-.login-box form {
+.login-box form, .sign-up-box form{
   margin-bottom: 30px;
 }
 
@@ -195,4 +215,14 @@ body {
   font-size: 13px;
   margin-left: 70px;
   justify-content: center;
+}
+div a {
+  text-decoration: none;
+  color: white;
+}
+
+div a:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
 }
