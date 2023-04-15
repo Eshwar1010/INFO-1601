@@ -15,6 +15,7 @@
     </head>
 
     <body>
+      <h1><a href="/index.html">HotSpott</a></h1>
 
         <div class="login-box">
             <h2>Login</h2>
@@ -45,7 +46,6 @@
     </body>
     <script src="/JAVASCRIPT/login.js"></script>
     <script>
-      let allUsers = [];
       async function getData() {
         try {
           let response = await fetch("https://api.sheety.co/8e6180d7d1ec4054557598f0b1950a1f/loginSignUp/sheet1");
@@ -58,10 +58,11 @@
       }
 
       async function showAllUsers() {
-        allUsers = await getData();
-        return allUsers;
+        let all = await getData();
+        return all;
       }
-      showAllUsers();
+      let allUsers = showAllUsers();
+      
       
       function searchuser() {
         let username = document.querySelector('#username').value;
@@ -71,18 +72,19 @@
           let cUsername = user.username;
           let cPassword = user.password;
 
-          if ((username == cUsername) && (password == cPassword)) {
+          if ((username === cUsername) && (password === cPassword)) {
             alert("Login Sucessfull");
             window.location.href = "/index.html"
           }
-          else if ((username === cUsername) && (password != cPassword)) {
+          else if ((username == cUsername) && (password != cPassword)) {
             alert("Incorrect password");
           }
-          else if ((username != cUsername) && (password === cPassword)) {
+          else if ((username != cUsername) && (password == cPassword)) {
             alert("Incorrect username");
           }
           else {
             alert("Incorrect Login Credentials");
+            return false
           }
         }
       };
